@@ -112,7 +112,7 @@
     padding: 4px;
     cursor: pointer;
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 812px) {
     #contentside {
         position: absolute;
         width: 100%;
@@ -350,7 +350,7 @@
 }
 
 .menulix1{
-    margin-bottom: 63px;
+    margin-bottom: 3px;
 }
 .menulix1 li{
     list-style: none;
@@ -381,14 +381,21 @@
 
 .logout{
     display: block;
-    background-color: #a1a1a1;
-    color: white;
+    background-color: #000000;
+    color: white!important;
     padding: 10px;
     cursor: pointer;
+    margin-bottom: 6px;
+    position: relative;
+    text-align: center;
+}
+.logout i{
+    position: absolute;
+    left: 61px;
 }
 .logout span{
     position: relative;
-    top: -6px;
+    top: 0px;
     left: 11px;
 }
 
@@ -2287,4 +2294,19 @@ and (min-width: 0px){
         margin: 5px 0;
         text-align: center;
     }
+}
+
+
+
+
+
+/* EVERYTHING ELSE */
+.scroll-container {
+  overflow: auto;         /* Enables scrolling */
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;          /* Chrome, Safari, Opera */
 }
