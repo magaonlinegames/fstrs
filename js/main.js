@@ -147,11 +147,11 @@ function openMENU(){
     
     if (menucount === 0) {
         $('.menubtn').text('close');
-        $('#menuside').addClass('menutouchUI');
+        $('.menuCtnr').addClass('menutouchUI');
         menucount = 1;
     }else if (menucount === 1) {
         $('.menubtn').text('menu');
-        $('#menuside').removeClass('menutouchUI');
+        $('.menuCtnr').removeClass('menutouchUI');
 
         console.log('MENU COUNT : ' + menucount);
         menucount = 0;
