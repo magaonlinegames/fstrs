@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Forsters &amp; Associates  - Personal Injury, Inheritance, Wrongful Death</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Home | Forsters Lawfirm" name="keywords">
+        <meta content="Home | Forsters Lawfirm" name="description">
+
+        <!-- Favicon -->
+        <link href="LGG.png" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&amp;family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- mines -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    </head>
+
+<body>
+        <div class="wrapper">
+            <!-- Top Bar Start -->
+            <div class="top-bar">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <h4 style="color: #aa9166;">Forsters &amp; Associates LLP</h4>
+                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="top-bar-right">
+                                <div class="text">
+                                    <h2>8:00 - 9:00</h2>
+                                    <p>Opening Hour Mon - Fri</p>
+                                </div>
+                                <div class="text">
+                                    <h2>+447451279176</h2>
+                                    <p>Contact Us Now</p>
+                                </div>
+                                <div class="social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- Nav Bar Start -->
+            <div class="nav-bar nav-sticky">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">MENU</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="index.html" class="nav-item nav-link active">Home</a>
+                                <a href="#about" class="nav-item nav-link">About</a>
+                                <a href="#practice" class="nav-item nav-link">Practice</a>
+                                <a href="#attorneys" class="nav-item nav-link">Attorneys</a>
+                                <a href="#contactid" class="nav-item nav-link">Contact</a>
+                                <a class="nav-item nav-link" id="clientaccessbtn" onclick="openLogin();">Client Access</a>
+                                
+                            </div>
+                            <div class="ml-auto">
+                                <a class="btn" id="searchattorney" onclick="openLogin();"> Client Access</a>
+                            </div>
+                            <!-- client login -->
+                             <div class="searchbar hide">
+                                <input type="text" id="searchbox">
+
+                                
+                             </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->
+
+            
+            
+            
+            <!-- Carousel Start -->
+            <div id="carousel" class="carousel slide pointer-event" data-ride="carousel" style="margin-top: 73px;">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class=""></li>
+                    <li data-target="#carousel" data-slide-to="1" class=""></li>
+                    <li data-target="#carousel" data-slide-to="2" class="active"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="img/carousel-1.jpg" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <h1 class="animated fadeInLeft"></h1>
+                            <p class="animated fadeInRight">Historic Win for Equal Education</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="img/carousel-2.jpg" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <p class="animated fadeInRight">Social Commitment</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item active">
+                        <img src="img/carousel-3.jpg" alt="Carousel Image">
+                        <div class="carousel-caption">
+                            <p class="animated fadeInRight">Resource Center</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- Carousel End -->
+            
+            
+            <!-- Top Feature Start-->
+            <div class="feature-top">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-item">
+                                <i class="far fa-check-circle"></i>
+                                <h3>$30 billion +</h3>
+                                <p>Verdicts &amp; Settlements</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-item">
+                                <i class="fa fa-user-tie"></i>
+                                <h3>Attorneys</h3>
+                                <p>Expert Attorneys</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-item">
+                                <i class="far fa-thumbs-up"></i>
+                                <h3>Success</h3>
+                                <p>Diverse Capabilities</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="feature-item">
+                                <i class="far fa-handshake"></i>
+                                <h3>Support</h3>
+                                <p>Quick Support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Feature End-->
+            
+            
+            <!-- About Start -->
+            <div class="about" id="about">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5 col-md-6">
+                            <div class="about-img">
+                                <img src="img/about.jpg" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6">
+                            <div class="section-header">
+                                <h3> FORSTERS LAWFIRM</h3>
+                            </div>
+                            <div class="about-text">
+                                
+                                <p>
+                                    The Forsters Firm is dedicated to continuing the lifelong quest of Forster Cochran, whose goal was to bring justice to all. 
+                                    To further that goal in the waning years of his life, he brought together The Forsters Firm, an alliance of Personal Injury 
+                                    lawyers with the resources and the will to press your case against those who have hurt you, no matter who they may be. 
+                                    Once we take your case, we dedicate ourselves to victory for you. Our record of success against some of the most powerful 
+                                    opponents in the country proves our dedication. If you find yourself alone against powerful enemies, The Forsters Firm will 
+                                    stand with you.
+                                </p>
+                                <a class="btn" href="">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- About End -->
+
+
+            <!-- Service Start -->
+            <div class="service" id="practice">
+                <div class="container">
+                    <div class="section-header">
+                        <h3>Our Practices Areas</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fa fa-landmark"></i>
+                                </div>
+                                <h3>Civil Rights</h3>
+                                <p>
+                                    The Cochran firm has fought 
+                                    for and obtained justice on behalf of police shooting victims, beating victims, false 
+                                    arrest victims and those who have been wrongfully convicted.
+                                </p>
+                                <a class="btn" href="">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <h3>Family Law</h3>
+                                <p>
+                                    Child support payments are essential to the health and well-being of young loved ones when a family unit is dissolved. Let us ensure you get the financial support you need for your children!
+                                </p>
+                                <a class="btn" href="">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fa fa-hand-holding-usd"></i>
+                                </div>
+                                <h3>Business Law</h3>
+                                <p>
+                                    We have represented numerous business owners with incorporation or the organization of limited liability companies or partnerships.  We can provide a wide variety of business advice.
+                                </p>
+                                <a class="btn" href="">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </div>
+                                <h3>Education Law</h3>
+                                <p>
+                                    We provide our clients with the support they need so they can focus on providing educational opportunities and programming for students and families
+                                </p>
+                                <a class="btn" href="">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fa fa-gavel"></i>
+                                </div>
+                                <h3>Estate Planning &amp; Probate</h3>
+                                <p>
+                                    We have prepared wills and trusts for several years and stay fully abreast of developments in the estate planning area.
+                                </p>
+                                <a class="btn" href="">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="service-item">
+                                <div class="service-icon">
+                                    <i class="fa fa-globe"></i>
+                                </div>
+                                <h3>Cyber Law</h3>
+                                <p>   Mr. Herman served for eight years on 
+                                    the Humboldt County Planning Commission, and was the chairman of the commission for three of those years.
+                                </p>
+                                <a class="btn" href="">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service End -->
+            
+            
+            <!-- Feature Start -->
+            <div class="feature">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="section-header">
+                                <h3>Why Choose Us</h3>
+                            </div>
+                            <div class="row align-items-center feature-item">
+                                <div class="col-5">
+                                    <div class="feature-icon">
+                                        <i class="fa fa-gavel"></i>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <h3>Best law practices</h3>
+                                    <p>
+                                        It’s having a vision and then seeing it through. Innovators re-imagine the future by bringing much better mousetraps into the world: game-changing products, services and ideas.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center feature-item">
+                                <div class="col-5">
+                                    <div class="feature-icon">
+                                        <i class="fa fa-balance-scale"></i>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <h3>Efficiency &amp; Trust</h3>
+                                    <p>
+                                        behind every disruptive start-up, trailblazing school, enterprising business and organization are determined leaders, talented staff, energetic teams and supporting professionals, including forward-thinking, confident and strategic lawyers.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center feature-item">
+                                <div class="col-5">
+                                    <div class="feature-icon">
+                                        <i class="far fa-smile"></i>
+                                    </div>
+                                </div>
+                                <div class="col-7">
+                                    <h3>Results you deserve</h3>
+                                    <p>
+                                        For individuals, that means protecting your property, your lifestyle – and your wallet. For businesses, that means taking the time to translate hard-and-fast legalese into English-for-entrepreneurs – enabling you to make rapid, well-informed decisions. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="feature-img">
+                                <img src="img/feature.jpg" alt="Feature">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Feature End -->
+            
+            
+            <!-- Team Start -->
+            <div class="team" id="attorneys">
+                <div class="container">
+                    <div class="section-header">
+                        <h3>Meet Our Expert Attorneys</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-1.png" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Adam Phillips</h2>
+                                    <p>Business Consultant</p>
+                                    <div class="team-social">
+                                        <a class="social-tw" href="">Send A Message</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-3.png" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Dylan Adams</h2>
+                                    <p>Criminal Consultant</p>
+                                    <div class="team-social">
+                                        <a class="social-tw" href="">Send A Message</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-2.png" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Gloria Edwards</h2>
+                                    <p>Divorce Consultant</p>
+                                    <div class="team-social">
+                                        <a class="social-tw" href="">Send A Message</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-4.png" alt="Team Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Philip MacArthur</h2>
+                                    <p>Estate Inheritance Consultant</p>
+                                    <div class="team-social">
+                                        <a class="social-tw" href="">Send A Message</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Team End -->
+
+
+            <!-- FAQs Start -->
+            <div class="faqs" style="display: none;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="faqs-img">
+                                <img src="img/faqs.jpg" alt="Image">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="section-header">
+                                <h2>Have A Questions?</h2>
+                            </div>
+                            <div id="accordion">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="true">
+                                            <span>1</span> Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                                            <span>2</span> Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseThree">
+                                            <span>3</span> Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseFour">
+                                            <span>4</span> Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <a class="card-link" data-toggle="collapse" href="#collapseFive">
+                                            <span>5</span> Lorem ipsum dolor sit amet?
+                                        </a>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non.
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <a class="btn" href="">Ask more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQs End -->
+
+
+            <!-- Testimonial Start -->
+            <div class="testimonial">
+                <div class="container">
+                    <div class="section-header">
+                        <h3>Review From Client</h3>
+                    </div>
+                    <div class="owl-carousel testimonials-carousel owl-loaded owl-drag">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-3600px, 0px, 0px); transition: all; width: 5400px;"><div class="owl-item cloned" style="width: 360px;"><div class="testimonial-item">
+                            <i class="fa fa-quote-right"></i>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="img/testimonial-4.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h2>Kenneth Cole</h2>
+                                    <p>Estate Administration</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        Jan is on top of our disputed lit files and keeps us updated and in the loop at all times. Jan is one of the many firms in my company’s national network of attorneys. His firm handles the majority of our cases in the State of Michigan and exceeds our expectations in every arena
+                                    </p>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 360px;"><div class="testimonial-item" style="display: none;">
+                            <i class="fa fa-quote-right"></i>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="img/testimonial-1.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h2>Client Name</h2>
+                                    <p>Profession</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                    </p>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 360px;"><div class="testimonial-item" style="display: none;">
+                            <i class="fa fa-quote-right"></i>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="img/testimonial-2.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h2>Client Name</h2>
+                                    <p>Profession</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                    </p>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 360px;"><div class="testimonial-item" style="display: none;">
+                            <i class="fa fa-quote-right"></i>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="img/testimonial-3.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h2>Client Name</h2>
+                                    <p>Profession</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                    </p>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 360px;"><div class="testimonial-item">
+                            <i class="fa fa-quote-right"></i>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="img/testimonial-1.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h2>James Wilson</h2>
+                                    <p>Debt Collection Client</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        Our company has been working with Jan Rubinstein and his associates for several years. His response time and his professionalism have been and will continue to be an asset to our company.
+                                    </p>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 360px;"><div class="testimonial-item">
+                            <i class="fa fa-quote-right"></i>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="img/testimonial-2.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h2>Laura Phyine</h2>
+                                    <p>Debt Agreement Client</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        I work with attorneys all over the U.S. in my business. I find not only is Jan Jeffrey Rubinstein a wonderful attorney, he is a very personable individual as well. I feel honored to recommend him to anyone requiring legal services to any degree in his area.
+                                    </p>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 360px;"><div class="testimonial-item">
+                            <i class="fa fa-quote-right"></i>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="img/testimonial-3.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h2>Alicia</h2>
+                                    <p>Crimainal Defence</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        They went above and beyond my expectations for my case! I didn’t expect such a great outcome! Jan was patient, kept his word and was very understanding! He answered all my questions, even when I asked them several times! If myself or anyone I know ever need anything, I know where I would go or recommend!
+                                    </p>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 360px;"><div class="testimonial-item">
+                            <i class="fa fa-quote-right"></i>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="img/testimonial-4.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h2>Kenneth Cole</h2>
+                                    <p>Estate Administration</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        Jan is on top of our disputed lit files and keeps us updated and in the loop at all times. Jan is one of the many firms in my company’s national network of attorneys. His firm handles the majority of our cases in the State of Michigan and exceeds our expectations in every arena
+                                    </p>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 360px;"><div class="testimonial-item" style="display: none;">
+                            <i class="fa fa-quote-right"></i>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="img/testimonial-1.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h2>Client Name</h2>
+                                    <p>Profession</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                    </p>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item" style="width: 360px;"><div class="testimonial-item" style="display: none;">
+                            <i class="fa fa-quote-right"></i>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="img/testimonial-2.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h2>Client Name</h2>
+                                    <p>Profession</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                    </p>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item active" style="width: 360px;"><div class="testimonial-item" style="display: none;">
+                            <i class="fa fa-quote-right"></i>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="img/testimonial-3.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h2>Client Name</h2>
+                                    <p>Profession</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit
+                                    </p>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned active" style="width: 360px;"><div class="testimonial-item">
+                            <i class="fa fa-quote-right"></i>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="img/testimonial-1.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h2>James Wilson</h2>
+                                    <p>Debt Collection Client</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        Our company has been working with Jan Rubinstein and his associates for several years. His response time and his professionalism have been and will continue to be an asset to our company.
+                                    </p>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 360px;"><div class="testimonial-item">
+                            <i class="fa fa-quote-right"></i>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="img/testimonial-2.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h2>Laura Phyine</h2>
+                                    <p>Debt Agreement Client</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        I work with attorneys all over the U.S. in my business. I find not only is Jan Jeffrey Rubinstein a wonderful attorney, he is a very personable individual as well. I feel honored to recommend him to anyone requiring legal services to any degree in his area.
+                                    </p>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 360px;"><div class="testimonial-item">
+                            <i class="fa fa-quote-right"></i>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="img/testimonial-3.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h2>Alicia</h2>
+                                    <p>Crimainal Defence</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        They went above and beyond my expectations for my case! I didn’t expect such a great outcome! Jan was patient, kept his word and was very understanding! He answered all my questions, even when I asked them several times! If myself or anyone I know ever need anything, I know where I would go or recommend!
+                                    </p>
+                                </div>
+                            </div>
+                        </div></div><div class="owl-item cloned" style="width: 360px;"><div class="testimonial-item">
+                            <i class="fa fa-quote-right"></i>
+                            <div class="row align-items-center">
+                                <div class="col-3">
+                                    <img src="img/testimonial-4.jpg" alt="">
+                                </div>
+                                <div class="col-9">
+                                    <h2>Kenneth Cole</h2>
+                                    <p>Estate Administration</p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        Jan is on top of our disputed lit files and keeps us updated and in the loop at all times. Jan is one of the many firms in my company’s national network of attorneys. His firm handles the majority of our cases in the State of Michigan and exceeds our expectations in every arena
+                                    </p>
+                                </div>
+                            </div>
+                        </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev">prev</div><div class="owl-next">next</div></div><div class="owl-dots"><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div></div></div>
+                </div>
+            </div>
+            <!-- Testimonial End -->
+
+
+            <!-- Blog Start -->
+            <div class="blog" style="display: none;">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Latest From Blog</h2>
+                    </div>
+                    <div class="owl-carousel blog-carousel owl-loaded owl-drag">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all;"><div class="owl-item"><div class="blog-item">
+                            <img src="img/blog-1.jpg" alt="Blog">
+                            <h3>Lorem ipsum dolor</h3>
+                            <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Civil Law</a>
+                                <i class="fa fa-calendar-alt"></i>
+                                <p>01-Jan-2045</p>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
+                            </p>
+                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                        </div></div><div class="owl-item"><div class="blog-item">
+                            <img src="img/blog-2.jpg" alt="Blog">
+                            <h3>Lorem ipsum dolor</h3>
+                            <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Family Law</a>
+                                <i class="fa fa-calendar-alt"></i>
+                                <p>01-Jan-2045</p>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
+                            </p>
+                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                        </div></div><div class="owl-item"><div class="blog-item">
+                            <img src="img/blog-3.jpg" alt="Blog">
+                            <h3>Lorem ipsum dolor</h3>
+                            <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Business Law</a>
+                                <i class="fa fa-calendar-alt"></i>
+                                <p>01-Jan-2045</p>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
+                            </p>
+                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                        </div></div><div class="owl-item"><div class="blog-item">
+                            <img src="img/blog-1.jpg" alt="Blog">
+                            <h3>Lorem ipsum dolor</h3>
+                            <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Education Law</a>
+                                <i class="fa fa-calendar-alt"></i>
+                                <p>01-Jan-2045</p>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
+                            </p>
+                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                        </div></div><div class="owl-item"><div class="blog-item">
+                            <img src="img/blog-2.jpg" alt="Blog">
+                            <h3>Lorem ipsum dolor</h3>
+                            <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Criminal Law</a>
+                                <i class="fa fa-calendar-alt"></i>
+                                <p>01-Jan-2045</p>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
+                            </p>
+                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                        </div></div><div class="owl-item"><div class="blog-item">
+                            <img src="img/blog-3.jpg" alt="Blog">
+                            <h3>Lorem ipsum dolor</h3>
+                            <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Cyber Law</a>
+                                <i class="fa fa-calendar-alt"></i>
+                                <p>01-Jan-2045</p>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
+                            </p>
+                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                        </div></div><div class="owl-item"><div class="blog-item">
+                            <img src="img/blog-1.jpg" alt="Blog">
+                            <h3>Lorem ipsum dolor</h3>
+                            <div class="meta">
+                                <i class="fa fa-list-alt"></i>
+                                <a href="">Business Law</a>
+                                <i class="fa fa-calendar-alt"></i>
+                                <p>01-Jan-2045</p>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor
+                            </p>
+                            <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                        </div></div></div></div><div class="owl-nav disabled"><div class="owl-prev">prev</div><div class="owl-next">next</div></div><div class="owl-dots"><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div></div></div>
+                </div>
+            </div>
+            <!-- Blog End -->
+            
+            
+            <!-- Newsletter Start -->
+            <div class="newsletter">
+                <div class="container">
+                    <div class="section-header">
+                        <h3>Subscribe Our Newsletter</h3>
+                    </div>
+                    <div class="form">
+                        <input class="form-control" placeholder="Email here">
+                        <button class="btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Newsletter End -->
+
+
+            <!-- Footer Start -->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-about">
+                                <h2>About Us</h2>
+                                <p>
+                                    Forsters &amp; Associates Law Firm, The world’s most innovative companies 
+                                    combine top-tier talent with the lean flexibility demanded in the 21st 
+                                    century marketplace. It’s time a law firm did the same.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-8">
+                            <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-link">
+                                <h2>Services Areas</h2>
+                                <a href="">Civil Law</a>
+                                <a href="">Family Law</a>
+                                <a href="">Business Law</a>
+                                <a href="">Education Law</a>
+                                <a href="">Immigration Law</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-link">
+                                <h2>Useful Pages</h2>
+                                <a href="">About Us</a>
+                                <a href="">Practices</a>
+                                <a href="">Attorneys</a>
+                                <a href="">Case Studies</a>
+                                <a href="">FAQs</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-contact" id="contactid">
+                                <h2>Get In Touch</h2>
+                                <!-- <p><i class="fa fa-map-marker-alt"></i>99 S.t Perkson Ave. Berlin, Germany</p> -->
+                                <p><i class="fa fa-map-marker-alt"></i>109 Crawford St, London W1H 2JE, UK</p>
+                                <p><i class="fa fa-phone-alt"></i>+44 745 1279 176</p>
+                                <p><i class="fa fa-envelope"></i>contactus@forsterslawfirm.com</p>
+                                <div class="footer-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="">Terms of use</a>
+                        <a href="">Privacy policy</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>© <a href="">Forsters Lawfirm</a>, All Right Reserved.</p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+            
+            <a href="#" class="back-to-top" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+
+        <div class="loginpage hide">
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+
+            <div class="loginform">
+                <form class="login-form">
+                    <h1>Login</h1>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required=""><span class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required="">
+                    </div>
+                    <button type="button" class="loginbtn" id="login-btn" onclick="loginclient();">Login</button>
+                    <p class="forgot-password"><a onclick="cancellogin();">Cancel</a></p>
+                </form>
+            </div>
+
+        </div>
+        <!-- profile page -->
+         <div class="blackout hide">
+
+         </div>
+        <div class="clientLogin hide">
+            <!-- IMAGE SHOWCASE -->
+             <div class="imageshowcase hide">
+                <i class="material-icons" id="closeimageshowcase_btn" onclick="hideimageshowcase();">close</i>
+                <img src="receipt.png" alt="">
+
+             </div>
+             <!-- endOF IMAGE SHOWCASE -->
+             <div class="covershowcase hide" onclick="hideimageshowcase();">
+
+             </div>
+            <!-- BLESSINGS -->
+            <div class="blessings hide">
+
+            </div>
+            <div class="clbx2" id="menuside">
+
+                <div class="logobx">
+                    <div class="logo logox">
+                        <a href="index.html">
+                            <h4 style="color: #aa9166;">Forsters &amp; Associates</h4>
+                            <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="menulix1">
+                    <li onclick="openDashboard();">
+                        <i class="large material-icons">insert_chart</i>
+                        <span class="menutxtli">
+                            DASHBOARD
+                        </span>
+                    </li>
+                    <li onclick="openBills();">
+                        <i class="large material-icons">monetization_on</i>
+                        <span class="menutxtli">
+                            BILLS
+                        </span>
+                    </li>
+                    <li onclick="openCalendar();">
+                        <i class="large material-icons">monetization_on</i>
+                        <span class="menutxtli">
+                            CALENDAR
+                        </span>
+                    </li>
+                    <li onclick="openTimesheet();">
+                        <i class="large material-icons">timelapse</i>
+                        <span class="menutxtli">
+                            TIMESHEET
+                        </span>
+                    </li>
+                    <li onclick="openDocuments();">
+                        <i class="large material-icons">web_asset</i>
+                        <span class="menutxtli">
+                          DOCUMENTS
+                        </span>
+                    </li>
+                    <li onclick="openContracts();">
+                        <i class="large material-icons">collections_bookmark</i>
+                        <span class="menutxtli">
+                          CONTRACTS
+                        </span>
+                    </li>
+                </ul>
+
+                <a class="logout" onclick="logout();">
+                    <i class="material-icons">logout</i>
+                    <span>
+                        Logout
+                    </span>
+                </a>
+                
+            </div>
+
+            <div class="clx2" id="contentside">
+                <i class="material-icons menubtn" id="menubtn" onclick="openMENU();">menu</i>
+                <div class="walls glass-effect">
+
+                    <div class="ctsidebx2" id="ctsidebx2-1">
+                        <div class="content-title-bx">
+                            <span class="nameclientbx">
+                                WELCOME,
+
+                                <span id="nameofclient"> PATRICK B. AGGREY</span>
+                            </span>
+                            <p class="ncbxp">
+                                Here you can find main overview of your account in 
+                                <span>Forsters Lawfirm</span>
+                            </p>
+                        </div>
+
+                        <!-- RECEIPT AND ALL BILLS -->
+                         <div class="receiptsbills">
+                            <span class="bill_1 billsdoc">
+                            </span>
+                            <span class="bill_2 billsdoc">
+                            </span>
+                            <span class="bill_3 billsdoc">
+                            </span>
+                         </div>
+
+                        <!-- UPCOMING BX -->
+                         <div class="upcomingbx">
+                            <span class="titlebx">
+                                Bills History
+                            </span>
+                            <ul>
+
+                                <li class="transactionList hide">
+                                    <div class="tsc2bx leftSD">
+                                        <div class="tsx1">
+                                            <span class="symbolImg"></span>
+                                            <span class="symbolTxt">
+                                                KR-December/20/2024 (12/20/2024)
+                                            </span>
+                                        </div>
+                                        <div class="tsx1">
+                                            Due: <span class="txt2nd">N/A</span>
+                                        </div>
+                                        <div class="tsx1">
+                                            Client: <span class="txt2nd">Patrick Benjamin Aggrey</span>
+                                        </div>
+                                    </div>
+                                    <div class="tsc2bx rightSD" id="rightsd1">
+                                        <div class="tsx1">
+                                            <span class="txt1st">$-50,000.00</span>
+                                        </div>
+                                        <div class="tsx1">
+                                            Amount due:  <span class="txt1st">$0.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="transactionList">
+                                    <div class="tsc2bx leftSD">
+                                        <div class="tsx1">
+                                            <span class="symbolImg">1</span>
+                                            <span class="symbolTxt">
+                                                Lawyer Fees for both  
+                                            </span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="tsc2bx rightSD" id="rightsd1">
+                                        <div class="tsx1">
+                                            <span class="txt1st">$12,000.00</span>
+                                        </div>
+                                        <div class="tsx1">
+                                            +  <span class="txt1st">$8,500.00</span>
+                                        </div>
+                                        <div class="tsx1">
+                                            =  <span class="txt1st">$20,500.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="transactionList">
+                                    <div class="tsc2bx leftSD">
+                                        <div class="tsx1">
+                                            <span class="symbolImg">2</span>
+                                            <span class="symbolTxt">
+                                                File case fees for both to $court 
+                                            </span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="tsc2bx rightSD" id="rightsd1">
+                                        <div class="tsx1">
+                                            <span class="txt1st">=$15,000.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="transactionList">
+                                    <div class="tsc2bx leftSD">
+                                        <div class="tsx1">
+                                            <span class="symbolImg">3</span>
+                                            <span class="symbolTxt">
+                                                Bailing bond fee for both 
+                                            </span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="tsc2bx rightSD" id="rightsd1">
+                                        <div class="tsx1">
+                                            <span class="txt1st">$3,800.00</span>
+                                        </div>
+                                        <div class="tsx1">
+                                            +  <span class="txt1st">$3,800.00</span>
+                                        </div>
+                                        <div class="tsx1">
+                                            =  <span class="txt1st">$7,600.00</span>
+                                        </div>
+                                    </div>
+                                </li> 
+
+                                <li class="transactionList">
+                                    <div class="tsc2bx leftSD">
+                                        <div class="tsx1">
+                                            <span class="symbolImg">4</span>
+                                            <span class="symbolTxt">
+                                                Total bail payment for Benjamin Patrick Aggrey
+                                            </span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="tsc2bx rightSD" id="rightsd1">
+                                        <div class="tsx1">
+                                            <span class="txt1st">$63,000.00</span>
+                                        </div>
+                                        <div class="tsx1 hide">
+                                            +  <span class="txt1st">$3,800.00</span>
+                                        </div>
+                                        <div class="tsx1 hide">
+                                            =  <span class="txt1st">$7,600.00</span>
+                                        </div>
+                                    </div>
+                                </li> 
+                            </ul>
+                         </div>
+
+                    </div>
+                    <div class="ctsidebx2" id="ctsidebx2-2">
+                        <div class="card_business" id="cardbx1">
+                            Logged hours (this month)
+                            <span class="amt2x">
+                                10:23 h
+                            </span>
+                        </div>
+
+                        <div class="card_business" id="cardbx2">
+                            Awaiting payment (USD)
+                            <span class="amt2x">
+                                $0.00
+                            </span>
+                            <br>
+                            Delayed payment (USD)
+                            <span class="amt2x">
+                                $0.00
+                            </span>
+                        </div>
+                    </div>
+
+
+                    
+
+                    <!-- ALL OTHER PAGES -->
+                     <div class="bill-content allotherpages hide">
+                        <p>
+                            You have no active bills currently
+                        </p>
+                     </div>
+
+
+                     <div class="calendar-content allotherpages hide">
+                        <p>
+                            You have no active Calendar set
+                        </p>
+                     </div>
+
+                     <div class="timesheet-content allotherpages hide">
+                        <p>
+                            You have no active timesheet  set
+                        </p>
+                     </div>
+
+
+
+                     <div class="document-content allotherpages hide">
+                        <p>
+                           Document not available
+                        </p>
+                     </div>
+
+                     <div class="contract-content allotherpages hide">
+                        <p>
+                            Contract not available
+                        </p>
+                     </div>
+
+                </div>
+            </div>
+                
+        </div>
+
+        <div class="clientLogin account2 hide">
+            <!-- IMAGE SHOWCASE -->
+             <div class="imageshowcase hide">
+                <i class="material-icons" id="closeimageshowcase_btn" onclick="hideimageshowcase();">close</i>
+                <img src="receipt.png" alt="">
+
+             </div>
+             <!-- endOF IMAGE SHOWCASE -->
+             <div class="covershowcase hide" onclick="hideimageshowcase();">
+
+             </div>
+            <!-- BLESSINGS -->
+            <div class="blessings hide">
+
+            </div>
+            <div class="clbx2" id="menuside">
+
+                <div class="logobx">
+                    <div class="logo logox">
+                        <a href="index.html">
+                            <h4 style="color: #aa9166;">Forsters &amp; Associates</h4>
+                            <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="menulix1">
+                    <li onclick="openDashboard();">
+                        <i class="large material-icons">insert_chart</i>
+                        <span class="menutxtli">
+                            DASHBOARD
+                        </span>
+                    </li>
+                    <li onclick="openBills();">
+                        <i class="large material-icons">monetization_on</i>
+                        <span class="menutxtli">
+                            BILLS
+                        </span>
+                    </li>
+                    <li onclick="openCalendar();">
+                        <i class="large material-icons">monetization_on</i>
+                        <span class="menutxtli">
+                            CALENDAR
+                        </span>
+                    </li>
+                    <li onclick="openTimesheet();">
+                        <i class="large material-icons">timelapse</i>
+                        <span class="menutxtli">
+                            TIMESHEET
+                        </span>
+                    </li>
+                    <li onclick="openDocuments();">
+                        <i class="large material-icons">web_asset</i>
+                        <span class="menutxtli">
+                          DOCUMENTS
+                        </span>
+                    </li>
+                    <li onclick="openContracts();">
+                        <i class="large material-icons">collections_bookmark</i>
+                        <span class="menutxtli">
+                          CONTRACTS
+                        </span>
+                    </li>
+                </ul>
+
+                <a class="logout" onclick="logout();">
+                    <i class="material-icons">logout</i>
+                    <span>
+                        Logout
+                    </span>
+                </a>
+                
+            </div>
+
+            <div class="clx2" id="contentside">
+                <i class="material-icons menubtn" id="menubtn" onclick="openMENU();">menu</i>
+                <div class="walls glass-effect">
+
+                    <div class="ctsidebx2" id="ctsidebx2-1">
+                        <div class="content-title-bx">
+                            <span class="nameclientbx">
+                                WELCOME,
+
+                                <span id="nameofclient"> PATRICK B. AGGREY</span>
+                            </span>
+                            <p class="ncbxp">
+                                Here you can find main overview of your account in 
+                                <span>Forsters Lawfirm</span>
+                            </p>
+                        </div>
+
+                        <!-- RECEIPT AND ALL BILLS -->
+                         <div class="receiptsbills">
+                            <span class="bill_1 billsdoc">
+                            </span>
+                            <span class="bill_2 billsdoc">
+                            </span>
+                            <span class="bill_3 billsdoc">
+                            </span>
+                            <span class="bill_4 billsdoc">
+                            </span>
+                            <span class="bill_5 billsdoc">
+                            </span>
+                         </div>
+
+                        <!-- UPCOMING BX -->
+                         <div class="upcomingbx">
+                            <span class="titlebx">
+                                Bills History
+                            </span>
+                            <ul>
+
+                                <li class="transactionList hide">
+                                    <div class="tsc2bx leftSD">
+                                        <div class="tsx1">
+                                            <span class="symbolImg"></span>
+                                            <span class="symbolTxt">
+                                                KR-December/20/2024 (12/20/2024)
+                                            </span>
+                                        </div>
+                                        <div class="tsx1">
+                                            Due: <span class="txt2nd">N/A</span>
+                                        </div>
+                                        <div class="tsx1">
+                                            Client: <span class="txt2nd">Patrick Benjamin Aggrey</span>
+                                        </div>
+                                    </div>
+                                    <div class="tsc2bx rightSD" id="rightsd1">
+                                        <div class="tsx1">
+                                            <span class="txt1st">$-50,000.00</span>
+                                        </div>
+                                        <div class="tsx1">
+                                            Amount due:  <span class="txt1st">$0.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="transactionList">
+                                    <div class="tsc2bx leftSD">
+                                        <div class="tsx1">
+                                            <span class="symbolImg">1</span>
+                                            <span class="symbolTxt">
+                                                Lawyer Fees for both  
+                                            </span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="tsc2bx rightSD" id="rightsd1">
+                                        <div class="tsx1">
+                                            <span class="txt1st">$12,000.00</span>
+                                        </div>
+                                        <div class="tsx1">
+                                            +  <span class="txt1st">$8,500.00</span>
+                                        </div>
+                                        <div class="tsx1">
+                                            =  <span class="txt1st">$20,500.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="transactionList">
+                                    <div class="tsc2bx leftSD">
+                                        <div class="tsx1">
+                                            <span class="symbolImg">2</span>
+                                            <span class="symbolTxt">
+                                                File case fees for both to $court 
+                                            </span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="tsc2bx rightSD" id="rightsd1">
+                                        <div class="tsx1">
+                                            <span class="txt1st">=$15,000.00</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="transactionList">
+                                    <div class="tsc2bx leftSD">
+                                        <div class="tsx1">
+                                            <span class="symbolImg">3</span>
+                                            <span class="symbolTxt">
+                                                Bailing bond fee for both 
+                                            </span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="tsc2bx rightSD" id="rightsd1">
+                                        <div class="tsx1">
+                                            <span class="txt1st">$3,800.00</span>
+                                        </div>
+                                        <div class="tsx1">
+                                            +  <span class="txt1st">$3,800.00</span>
+                                        </div>
+                                        <div class="tsx1">
+                                            =  <span class="txt1st">$7,600.00</span>
+                                        </div>
+                                    </div>
+                                </li> 
+
+                                <li class="transactionList">
+                                    <div class="tsc2bx leftSD">
+                                        <div class="tsx1">
+                                            <span class="symbolImg">4</span>
+                                            <span class="symbolTxt">
+                                                Total bail payment for Benjamin Patrick Aggrey
+                                            </span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="tsc2bx rightSD" id="rightsd1">
+                                        <div class="tsx1">
+                                            <span class="txt1st">$63,000.00</span>
+                                        </div>
+                                        <div class="tsx1 hide">
+                                            +  <span class="txt1st">$3,800.00</span>
+                                        </div>
+                                        <div class="tsx1 hide">
+                                            =  <span class="txt1st">$7,600.00</span>
+                                        </div>
+                                    </div>
+                                </li> 
+                            </ul>
+                         </div>
+
+                    </div>
+                    <div class="ctsidebx2" id="ctsidebx2-2">
+                        <div class="card_business" id="cardbx1">
+                            Logged hours (this month)
+                            <span class="amt2x">
+                                6:12 h
+                            </span>
+                        </div>
+
+                        <div class="card_business" id="cardbx2">
+                            Awaiting payment (USD)
+                            <span class="amt2x">
+                                $0.00
+                            </span>
+                            <br>
+                            Delayed payment (USD)
+                            <span class="amt2x">
+                                $0.00
+                            </span>
+                        </div>
+                    </div>
+
+
+                    
+
+                    <!-- ALL OTHER PAGES -->
+                     <div class="bill-content allotherpages hide">
+                        <p>
+                            You have no active bills currently
+                        </p>
+                     </div>
+
+
+                     <div class="calendar-content allotherpages hide">
+                        <p>
+                            You have no active Calendar set
+                        </p>
+                     </div>
+
+                     <div class="timesheet-content allotherpages hide">
+                        <p>
+                            You have no active timesheet  set
+                        </p>
+                     </div>
+
+
+
+                     <div class="document-content allotherpages hide">
+                        <p>
+                           Document not available
+                        </p>
+                     </div>
+
+                     <div class="contract-content allotherpages hide">
+                        <p>
+                            Contract not available
+                        </p>
+                     </div>
+
+                </div>
+            </div>
+                
+        </div>
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        
+    
+
+</body>
+</html>
