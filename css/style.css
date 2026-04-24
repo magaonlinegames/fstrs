@@ -8,9 +8,8 @@
     height: 100%;
     background-color: #000;
     z-index: 9999;
-    display: block;
+    display: none;
 }
-
 .expired{
     position: fixed;
     top: 0;
@@ -20,7 +19,6 @@
     z-index: 999999;
     display: none;
 }
-
 .progress-container {
     width: 80%;
     max-width: 600px;
@@ -2175,6 +2173,17 @@ and (min-width: 0px){
 /*******************************/
 /********* Footer CSS **********/
 /*******************************/
+.emailtxt{
+    font-size: 13px;
+    display: inline-block;
+    width: 129px;
+}
+.inl{
+    display: inline;
+}
+.btm{
+    margin-bottom: 0;
+}
 .footer {
     position: relative;
     margin-top: 45px;
