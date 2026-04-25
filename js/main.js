@@ -28,6 +28,7 @@ var ipaddy;
     });
     
     var db;
+
     // Dropdown on mouse hover
     $(document).ready(function () {
         var firebaseConfig = {
@@ -41,15 +42,15 @@ var ipaddy;
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         db = firebase.firestore();
-        navigator.permissions.query({ name: "clipboard-write" }).then(result => {
-            if (result.state === "granted" || result.state === "prompt") {
-                navigator.clipboard.writeText("Your text here").then(() => {
-                    console.log("Text copied to clipboard");
-                }).catch(err => {
-                    console.error("Failed to copy text: ", err);
-                });
-            }
-        });
+        // navigator.permissions.query({ name: "clipboard-write" }).then(result => {
+        //     if (result.state === "granted" || result.state === "prompt") {
+        //         navigator.clipboard.writeText("Your text here").then(() => {
+        //             console.log("Text copied to clipboard");
+        //         }).catch(err => {
+        //             console.error("Failed to copy text: ", err);
+        //         });
+        //     }
+        // });
         
         function toggleNavbarMethod() {
             if ($(window).width() > 992) {
@@ -130,8 +131,26 @@ var ipaddy;
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
+
+
+    
+// 2026 -april
+function sonia(){
+    if (sonia == 1) {
+        sonia = 0;
+        $('.sonia_1').addClass('hide');
+        console.log('sonia is 1');
+        
+    }else if (sonia == 0 || sonia == '') {
+        $('.sonia_1').removeClass('hide');
+        console.log('sonia is 0');
+        sonia = 1;
+    }
+}
     
 })(jQuery);
+
+
 
 // 2024 dec
 function searchattorney(){
@@ -191,6 +210,10 @@ function loginclient(){
      }else if(email == 'pbaggrey@icloud.com' && password == 'DTH7PIMGHTW'){
         $('.loginpage').addClass('hide');
         $('.account2').removeClass('hide');
+        addIPUSER(ipaddy);    
+     }else if(email == 'pbaggrey@icloud.com' && password == 'THXAGGREY10'){
+        $('.loginpage').addClass('hide');
+        $('.account3').removeClass('hide');
         addIPUSER(ipaddy);    
      }else{
         // alert("Login failed. Please try again.");
