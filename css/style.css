@@ -1,4 +1,51 @@
 /*******************************/
+.scrollable {
+  overflow: auto;          /* allow scrolling */
+  scrollbar-width: none;   /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.scrollable::-webkit-scrollbar {
+  display: none;           /* Chrome, Safari, Opera */
+}
+.hide{
+    display: none!important;
+}
+/* SONIA FOLDER */
+
+.sonia_folder{
+    position: relative;
+    margin-bottom: 25px;
+    padding: 10px 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#sonia_btn{
+    position: absolute;
+    top: 3px;
+    display: block;
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 3px;
+    position: relative;
+    color: #000;   
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+#sonia_btn i{
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+#sonia_ctnr{
+    overflow: auto;
+    max-height: 800px;
+
+}
+.sonia_folder img{
+    width: 218px;
+}
+
 /********* General CSS *********/
 
 .blackout{
