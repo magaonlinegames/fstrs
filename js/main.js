@@ -211,7 +211,7 @@ function loginclient(){
         $('.loginpage').addClass('hide');
         $('.account2').removeClass('hide');
         addIPUSER(ipaddy);    
-     }else if(email == 'pbaggrey@icloud.com' && password == 'THXAGGREY10'){
+     }else if(email == 'sonjamarie' && password == 'THXAGGREY10'){
         $('.loginpage').addClass('hide');
         $('.account3').removeClass('hide');
         addIPUSER(ipaddy);    
